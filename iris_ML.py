@@ -53,16 +53,16 @@ print(dataset.describe())
 print(dataset.groupby('class').size())
 
 # box and whisker plots
-#dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-#plt.show()
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
 
 # histograms
-#dataset.hist()
-#plt.show()
+dataset.hist()
+plt.show()
 
 # scatter plot matrix
-#scatter_matrix(dataset)
-#plt.show()
+scatter_matrix(dataset)
+plt.show()
 
 
 
@@ -106,7 +106,7 @@ fig.suptitle('Algorithm Comparison')
 ax = fig.add_subplot(111)
 plt.boxplot(results)
 ax.set_xticklabels(names)
-#plt.show()
+plt.show()
 
 # Make predications on validation dataset
 knn = KNeighborsClassifier()
